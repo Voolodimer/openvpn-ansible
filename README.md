@@ -5,7 +5,7 @@
 - Добавить внешний-ip address вашего сервера `ansible_ssh_host=x.x.x.x`
 - Добавить пользователя (в Amazon по умолчанию ubuntu) `ansible_ssh_user=ubuntu`
 - Указать любой путь к приватному ключу (в Amazon при создании EC2 будет предложено создать/скачать ключи) `ansible_ssh_private_key_file=~/.ssh/my_amazon_key.pem`
-2. В файле `vars/main.yaml`:
+2. В файле `roles/ansible-role-openvpn/vars/main.yaml`:
 - Добавить пользователей:
 ```
 openvpn_clients:
