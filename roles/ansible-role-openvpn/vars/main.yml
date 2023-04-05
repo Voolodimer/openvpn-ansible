@@ -1,0 +1,15 @@
+---
+# vars file for ansible-role-openvpn
+openvpn_dir: "/etc/openvpn"
+openvpn_easyrsa_dir: "/usr/share/easy-rsa"
+
+openvpn_clients:
+  - user1
+  - user2
+
+# network
+openvpn_port: "1194"
+openvpn_proto: "udp"
+openvpn_network: 10.9.0.0
+openvpn_netmask: 255.255.255.0
+openvpn_address: x.x.x.x
